@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="MessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="444" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9r-F6-oCU">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9iT-no-1Jo"/>
+                            <constraint firstAttribute="height" constant="40" id="T9s-W5-GEp"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-yd-XHd">
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="哈哈" backgroundImage="bubbleImage">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kaM-yd-XHd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="7V9-q2-tLR"/>
+                    <constraint firstItem="c9r-F6-oCU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="OQU-xV-3yb"/>
+                    <constraint firstItem="kaM-yd-XHd" firstAttribute="leading" secondItem="c9r-F6-oCU" secondAttribute="trailing" constant="10" id="QUI-tx-iFq"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="kaM-yd-XHd" secondAttribute="trailing" constant="60" id="T5H-5C-CCE"/>
+                    <constraint firstAttribute="bottom" secondItem="kaM-yd-XHd" secondAttribute="bottom" constant="22" id="hO6-TP-idh"/>
+                    <constraint firstItem="c9r-F6-oCU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="krj-NN-EQL"/>
+                    <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="kaM-yd-XHd" secondAttribute="trailing" constant="257" id="qWr-YV-mBS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="c9r-F6-oCU" id="zAg-9Q-kCj"/>
+                <outlet property="messageView" destination="kaM-yd-XHd" id="ylw-kk-qCU"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="-221"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubbleImage" width="63" height="52"/>
+    </resources>
+</document>
